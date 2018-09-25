@@ -12,7 +12,7 @@ public class Spusteniprohlizece {
 //	 System.out.println(System.getProperty("webdriver.chrome.driver"));	
 	 System.setProperty("webdriver.chrome.driver", "C:\\Users\\Tomas Bilka\\Desktop\\selenium_podklady\\chromedriver_win32\\chromedriver.exe");
 	 driver = createDriver();  	// slo by i bez prirazeni, protoze je to staticka var i staticka metoda
-	 driver.get("http://www.google.com");//////////**
+	 driver.get("http://www.google.com");//////////**//
 	 
 	}
 	
