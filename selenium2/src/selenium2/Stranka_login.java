@@ -1,7 +1,7 @@
 package selenium2;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
+//import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.By;
 
 public class Stranka_login {
@@ -14,7 +14,7 @@ public class Stranka_login {
 	
     public Stranka_login (WebDriver driver) {
         this.driver = driver;
-        PageFactory.initElements(driver, this.driver);        
+   //     PageFactory.initElements(driver, this.driver);        
     }
     
     public void napis_email(String text) {
