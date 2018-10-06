@@ -21,7 +21,7 @@ public class Spusteniprohlizece {
 	 stranka.zmackni_login();
 	 
 	 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	 driver.quit();
+	// driver.quit();
 	 
 	}
 	
