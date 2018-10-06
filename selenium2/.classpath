@@ -13,5 +13,6 @@
 	<classpathentry kind="lib" path="C:/Users/Tomas Bilka/Desktop/selenium_podklady/selenium-java-3.14.0/libs/okio-1.14.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Tomas Bilka/Desktop/selenium_podklady/selenium-java-3.14.0/client-combined-3.14.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Tomas Bilka/Desktop/selenium_podklady/selenium-java-3.14.0/client-combined-3.14.0-sources.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
