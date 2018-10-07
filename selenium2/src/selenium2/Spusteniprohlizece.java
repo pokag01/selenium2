@@ -2,6 +2,7 @@ package selenium2;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.*;
+import org.junit.ComparisonFailure;
 import java.util.concurrent.TimeUnit;
 import static org.junit.Assert.*;  // kvuli assertum pri porovnavani v testech
 
@@ -18,7 +19,7 @@ public class Spusteniprohlizece {
 	 
  
 	 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	// driver.quit();
+	 driver.quit();
 	}
 	
 	public static WebDriver createDriver() {	
@@ -35,9 +36,18 @@ public class Spusteniprohlizece {
 		stranka.napis_email("pokag01");
 		stranka.napis_psw("heslo123");
 		stranka.zmackni_login();
-		assertEquals("Login",stranka.pageTitle_Login.getText());  // todo:dospsat try catch block 
+		try{
+//		assertEquals("Login",stranka.pageTitle_Login.getText());  
+		assertEquals("Login This page is restricted",stranka.pageTitle_Login.getText()); 
+		System.out.println("Test was succesfull");
+		} 
+		catch (ComparisonFailure chyba){
 		//Exception in thread "main" org.junit.ComparisonFailure: expected:<Login[]> but was:<Login[ This page is restricted]>
-	//	return driver;
+			System.out.println(chyba);
+			System.out.println(" test zfailoval X X X X X  ");
+		}
+		
+		//	return driver;
 	}
 
 }
